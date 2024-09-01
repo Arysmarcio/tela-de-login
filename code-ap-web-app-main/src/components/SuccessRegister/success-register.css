@@ -1,0 +1,51 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_about {
+    display: flex;
+    align-items: start; /* Centers the button vertically */
+    justify-content: flex-start;
+    width: 100%; /* Ensures the header spans the full width */
+}
+
+.button_image_about {
+    display: flex;
+    align-items: start;
+    max-width: 100%; /* Ensures images are not wider than their container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px 0;
+}
+
+
+.title,
+.button {
+  color: #794a3a;
+  margin: 9px;
+  font-size: 19px;
+  font-weight: bold;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 70px;
+}
+
+.button {
+  background-color: #794a3a;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 40px;
+  margin-top: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

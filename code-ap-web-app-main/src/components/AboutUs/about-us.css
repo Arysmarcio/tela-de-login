@@ -1,0 +1,72 @@
+.container_about {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAEBCE;
+    padding: 30px;
+    height: 100vh;
+    overflow: auto; /* Ensures content can scroll if it exceeds viewport height */
+}
+
+.header_about {
+    display: flex;
+    align-items: start; /* Centers the button vertically */
+    justify-content: flex-start;
+    width: 100%; /* Ensures the header spans the full width */
+}
+
+.button_image_about {
+    display: flex;
+    align-items: start;
+    max-width: 100%; /* Ensures images are not wider than their container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px 0;
+}
+
+.backButton {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+}
+
+.body_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Ensures body content does not overflow horizontally */
+}
+
+.images_about {
+    max-width: 100%; /* Ensures images are not wider than their container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px 0;
+}
+
+.text_about {
+    margin: 10px 0;
+    text-align: center;
+    color: #38221B;
+    font-size: 20px;
+    padding: 0 20px; /* Adds padding to prevent text from touching the edges */
+}
+
+.title_about {
+    text-align: center;
+    font-size: 30px;
+    color: #794A3A;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .images_about {
+        width: 180px; /* Smaller width for smaller screens */
+        height: 200px; /* Adjusted height to maintain aspect ratio */
+    }
+
+    .text_about, .title_about {
+        font-size: 18px; /* Smaller font size for readability on smaller devices */
+    }
+}
